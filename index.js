@@ -21,7 +21,7 @@ function viewCart() {
     if ( i !== 0 ) {
       message = `${message}, `;
     }
-    else if ( i !== 0 && i === cart.length-1 ) {
+    else if ( i === cart.length-1 ) {
       message = `${message}, and `;
     }
     message = `${message}${cart[i].itemName} at $${cart[i].itemPrice}`;
