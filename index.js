@@ -18,7 +18,7 @@ function addToCart(item) {
 function viewCart() {
   var message = "In your cart, you have ";
   for ( var i = 0; i < cart.length; i++ ) {
-    message = `${message} ${cart[i].itemName} at $${cart[i].itemPrice}`;
+    message = `${message}${cart[i].itemName} at $${cart[i].itemPrice}`;
     if ( i != cart.length-1 ) {
       message = `${message}, and`;
     } else {
