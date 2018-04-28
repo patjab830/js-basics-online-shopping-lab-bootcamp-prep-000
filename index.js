@@ -20,7 +20,7 @@ function viewCart() {
   for ( var i = 0; i < cart.length; i++ ) {
     message = `${message}${cart[i].itemName} at $${cart[i].itemPrice}`;
     if ( i != cart.length-1 ) {
-      message = `${message}, and`;
+      message = `${message}, and `;
     } else {
       message = `${message}.`;
     }
