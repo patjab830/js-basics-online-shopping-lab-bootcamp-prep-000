@@ -19,7 +19,7 @@ function viewCart() {
   var message = "In your cart, you have ";
   for ( var i = 0; i < cart.length; i++ ) {
     if ( i == cart.length-2 && cart.length > 2 ) {
-      message = `${message} and, `;
+      message = `${message}, and, `;
     }
     message = `${message}${cart[i].itemName} at $${cart[i].itemPrice}`;
     if ( i == cart.length-1 ) {
