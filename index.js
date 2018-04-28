@@ -22,7 +22,7 @@ function viewCart() {
     if ( i != cart.length-1 ) {
       message = `${message}, and`;
     } else {
-      message = `.`;
+      message = `${message}.`;
     }
   }
   
