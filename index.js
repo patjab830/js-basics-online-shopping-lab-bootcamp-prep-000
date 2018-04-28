@@ -18,7 +18,7 @@ function addToCart(item) {
 function viewCart() {
   var message = "In your cart, you have ";
   for ( var i = 0; i < cart.length; i++ ) {
-    if ( i !== 0 && i > cart.length-1) {
+    if ( i !== 0 ) {
       message = `${message}, `;
     }
     else if ( i !== 0 && i === cart.length-1 ) {
