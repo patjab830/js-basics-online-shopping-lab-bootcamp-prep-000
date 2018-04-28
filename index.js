@@ -18,13 +18,15 @@ function addToCart(item) {
 function viewCart() {
   var message = "In your cart, you have ";
   for ( var i = 0; i < cart.length; i++ ) {
+    if ( i == cart.length-2) {
+      message = `and`;
+    }
     message = `${message}${cart[i].itemName} at $${cart[i].itemPrice}`;
-    if ( i > cart.length-2 ) {
-      message = `${message}, `;
-    } else if ( i == cart.length-2 ) {
-      message = `${message}, and`;
+    
+    if ( i == cart.length-2 ) {
+      
     } else if ( i == cart.length-1 ) {
-      message = `${message}.`;
+      message = `${message}`;
     }
   }
   
